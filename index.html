@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-body-secondary">
+    <nav class="navbar container-fluid bg-light">
+        <ul class="col-10 nav">
+            <li><a class="nav-link icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"  class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+                </svg></a></li>
+            <li class="navbar-brand"><h3>Instagram</h3></li>
+        </ul>
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Create New Post</button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Create New Post</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="message-text" class="col-form-label">Caption</label>
+                    <textarea class="form-control" id="message-text" placeholder="Add caption"></textarea>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                      <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                      <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16">
+                      <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/>
+                      <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+                    </svg>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Publish</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle me-5 pe-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z"/></svg>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accesibility</a></li>
+              <li><a class="dropdown-item" href="#">Privacy & Data</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item text-danger" href="#">LOG OUT</a></li>
+            </ul>
+          </div>
+    </nav>
+    <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="" class="bi bi-square-fill" viewBox="0 0 16 16">
+            <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"></path>
+          </svg></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="" class="bi bi-grid-3x2-gap-fill" viewBox="0 0 16 16">
+            <path d="M1 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V4zM1 9a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V9zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V9z"></path>
+          </svg></button>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+            <div class="container-fluid text-start  text-secondary-emphasis">
+              <div class="row">  
+                <div class="col-4"></div>
+                <div class="col-4 d-flex justify-content-center mt-5">
+                  <div class="card" style="width: 25rem;">
+                    <div class="card-header row">
+                      <p class="col-10">!!!</p> <p class="col-2">01/09</p>
+                    </div>
+                      <img src="https://fedeloja.com/wp-content/uploads/2021/10/blog-4-720px.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text"><strong>200 likes</strong><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae perspiciatis culpa sint in amet similique, consequuntur at enim incidunt quisquam quo officiis animi harum, quod aperiam possimus accusamus ex reprehenderit.</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">  
+                <div class="col-4"></div>
+                <div class="col-4 d-flex justify-content-center mt-5">
+                  <div class="card" style="width: 25rem;">
+                    <div class="card-header row">
+                        <p class="col-10">THE FAMILY TOGETHER</p> <p class="col-2">01/09</p>
+                    </div>
+                      <img src="https://discover.rbcroyalbank.com/wp-content/uploads/Buying_a_Vacation_Property_Banner-small_402x.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text"><strong>204 likes</strong><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae perspiciatis culpa sint in amet similique, consequuntur at enim incidunt quisquam quo officiis animi harum, quod aperiam possimus accusamus ex reprehenderit.</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">  
+                <div class="col-4"></div>
+                <div class="col-4 d-flex justify-content-center mt-5">
+                  <div class="card" style="width: 25rem;">
+                    <div class="card-header row">
+                        <p class="col-10">BEAUTIFUL</p> <p class="col-2">01/09</p>
+                    </div>
+                      <img src="https://i.blogs.es/3fd5a4/jumpstory-download20220511-143520/1366_2000.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text"><strong>190 likes</strong><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae perspiciatis culpa sint in amet similique, consequuntur at enim incidunt quisquam quo officiis animi harum, quod aperiam possimus accusamus ex reprehenderit.</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">  
+                <div class="col-4"></div>
+                <div class="col-4 d-flex justify-content-center mt-5">
+                  <div class="card" style="width: 25rem;">
+                    <div class="card-header row">
+                        <p class="col-10">WE MADE IT!!</p> <p class="col-2">01/09</p>
+                    </div>
+                      <img src="https://objetivotorrevieja.files.wordpress.com/2021/05/img-20210502-wa0009.jpg-infantil-a-en-empate-intangco.jpg?w=584" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text"><strong>210 likes</strong><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae perspiciatis culpa sint in amet similique, consequuntur at enim incidunt quisquam quo officiis animi harum, quod aperiam possimus accusamus ex reprehenderit.</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">  
+                <div class="col-4"></div>
+                <div class="col-4 d-flex justify-content-center mt-5">
+                  <div class="card" style="width: 25rem;">
+                    <div class="card-header row">
+                        <p class="col-10">ON THE BEACH!</p> <p class="col-2">01/09</p>
+                    </div>
+                      <img src="https://images.saatchiart.com/saatchi/1007170/art/4618003/3687839-TYVQGEHL-7.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text"><strong>240 likes</strong><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae perspiciatis culpa sint in amet similique, consequuntur at enim incidunt quisquam quo officiis animi harum, quod aperiam possimus accusamus ex reprehenderit.</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">  
+                <div class="col-4"></div>
+                <div class="col-4 d-flex justify-content-center mt-5">
+                  <div class="card" style="width: 25rem;">
+                    <div class="card-header row">
+                        <p class="col-10">AMAZING</p> <p class="col-2">01/09</p>
+                    </div>
+                      <img src="https://www.xtrafondos.com/descargar.php?id=9759&resolucion=3840x2160" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text"><strong>310 likes</strong><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae perspiciatis culpa sint in amet similique, consequuntur at enim incidunt quisquam quo officiis animi harum, quod aperiam possimus accusamus ex reprehenderit.</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">  
+                <div class="col-4"></div>
+                <div class="col-4 d-flex justify-content-center mt-5">
+                  <div class="card" style="width: 25rem;">
+                    <div class="card-header row">
+                        <p class="col-10">MY DOGS TONY AND ROKO!</p> <p class="col-2">01/09</p>
+                    </div>
+                      <img src="https://tuperrosalchicha.com/wp-content/uploads/2021/01/tu-perro-salchicha-web-11.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text"><strong>310 likes</strong><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae perspiciatis culpa sint in amet similique, consequuntur at enim incidunt quisquam quo officiis animi harum, quod aperiam possimus accusamus ex reprehenderit.</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">  
+                <div class="col-4"></div>
+                <div class="col-4 d-flex justify-content-center mt-5">
+                  <div class="card" style="width: 25rem;">
+                    <div class="card-header row">
+                        <p class="col-10">MASTER PIECE!</p> <p class="col-2">01/09</p>
+                    </div>
+                      <img src="https://w0.peakpx.com/wallpaper/580/33/HD-wallpaper-zelda-ocarina-of-time-artwork-the-legend-of-zelda-games-artwork-artist-digital-art.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text"><strong>201 likes</strong><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae perspiciatis culpa sint in amet similique, consequuntur at enim incidunt quisquam quo officiis animi harum, quod aperiam possimus accusamus ex reprehenderit.</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">  
+                <div class="col-4"></div>
+                <div class="col-4 d-flex justify-content-center mt-5">
+                  <div class="card" style="width: 25rem;">
+                    <div class="card-header row">
+                        <p class="col-10">WOOOOOOOW</p> <p class="col-2">01/09</p>
+                    </div>
+                      <img src="https://elcomercio.pe/resizer/y6vcncwK1pvlsLwZcy4Zg1q7RfI=/1200x800/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/J5CDEKU4GFBWHAUFIVYM3NYUCM.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text"><strong>410 likes</strong><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae perspiciatis culpa sint in amet similique, consequuntur at enim incidunt quisquam quo officiis animi harum, quod aperiam possimus accusamus ex reprehenderit.</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>      
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            <div class="row">
+                <img src="https://fedeloja.com/wp-content/uploads/2021/10/blog-4-720px.jpg" alt="..." class="img-thumbnail col-4">
+                <img src="https://discover.rbcroyalbank.com/wp-content/uploads/Buying_a_Vacation_Property_Banner-small_402x.jpg" alt="..." class="img-thumbnail col-4">
+                <img src="https://i.blogs.es/3fd5a4/jumpstory-download20220511-143520/1366_2000.jpg" alt="..." class="img-thumbnail col-4">
+                <img src="https://objetivotorrevieja.files.wordpress.com/2021/05/img-20210502-wa0009.jpg-infantil-a-en-empate-intangco.jpg?w=584" alt="..." class="img-thumbnail col-4">
+                <img src="https://images.saatchiart.com/saatchi/1007170/art/4618003/3687839-TYVQGEHL-7.jpg" alt="..." class="img-thumbnail col-4">
+                <img src="https://www.xtrafondos.com/descargar.php?id=9759&resolucion=3840x2160" alt="..." class="img-thumbnail col-4">
+                <img src="https://tuperrosalchicha.com/wp-content/uploads/2021/01/tu-perro-salchicha-web-11.jpg" alt="..." class="img-thumbnail col-4">
+                <img src="https://w0.peakpx.com/wallpaper/580/33/HD-wallpaper-zelda-ocarina-of-time-artwork-the-legend-of-zelda-games-artwork-artist-digital-art.jpg" alt="..." class="img-thumbnail col-4">
+                <img src="https://elcomercio.pe/resizer/y6vcncwK1pvlsLwZcy4Zg1q7RfI=/1200x800/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/J5CDEKU4GFBWHAUFIVYM3NYUCM.jpg" alt="..." class="img-thumbnail col-4">
+              </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
